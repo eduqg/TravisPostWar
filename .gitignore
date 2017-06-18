@@ -1,0 +1,32 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Binary Archives
+*.exe
+PostWar
+
+# Created by https://www.gitignore.io/api/cmake
+
+### CMake ###
+build/CMakeCache.txt
+build/CMakeFiles
+build/CMakeScripts
+build/Testing
+build/cmake_install.cmake
+build/install_manifest.txt
+build/compile_commands.json
+build/CTestTestfile.cmake
+build/Makefile
+
+# End of https://www.gitignore.io/api/cmake
