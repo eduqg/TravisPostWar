@@ -2,9 +2,19 @@ sudo: required
 dist: trusty
 language: cpp
 
+# whitelist
+branches:
+  only:
+    - master
+
 install:
   - sudo apt-get update
-  - sudo apt-get install cmake libsdl1.2-dev libsdl1.2debian libsdl-image1.2 libsdl-image1.2-dev libsdl-net1.2 libsdl-net1.2-dev libsdl-mixer1.2 && libsdl-mixer1.2-dev install libsdl-ttf2.0-0 && libsdl-ttf2.0-0-dev -y
+  - sudo apt-get install cmake -y
+  - sudo apt-get install libsdl1.2-dev libsdl1.2debian -y
+  - sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev -y
+  - sudo apt-get install libsdl-net1.2 libsdl-net1.2-dev -y
+  - sudo apt-get install libsdl-mixer1.2 libsdl-mixer1.2-dev -y
+  - sudo apt-get install libsdl-ttf2.0-0 libsdl-ttf2.0-0-dev -y
 
 compiler:
   - g++
