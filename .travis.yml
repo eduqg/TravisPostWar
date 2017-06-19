@@ -9,7 +9,7 @@ branches:
 
 install:
   - ls
-  - sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew install cmake
   - ls
   - sudo apt-get update
